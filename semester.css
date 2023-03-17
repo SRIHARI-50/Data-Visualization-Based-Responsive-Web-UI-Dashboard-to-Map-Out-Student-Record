@@ -1,0 +1,114 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-image: url('PSG1.png');
+    background-size: cover;
+}
+
+.containers{ /* Background image */
+    margin-top: 50px;
+    margin-bottom: 100px;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding: 30px;
+    border-radius: 30px;
+    background-color: #ECF0F1;
+    box-shadow: 5px 10px 8px 5px #888888;
+    animation: ripple 1.5s linear infinite;
+    transition: all 0.7s ease;
+}
+
+.containers h2{ /* Heading stylings */
+    color:#A569BD; 
+    font-family:'Times New Roman';
+    text-decoration-line: underline;
+    font-size: 35px;
+    text-align: center;
+}
+
+.containers .forms{
+    text-align: center;
+}
+
+.containers .forms form{ /* Feed back form Alignment */
+    padding: 10px;
+}
+
+.containers .forms form input{ /* Input Stylings */
+    width: 80%;
+    margin: 10px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+}
+
+
+.containers .forms form button{ /* Stylings Stylings*/
+    width: 84%;
+    margin: 10px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    background-color: #A569BD;
+    font-size: 20px;
+    color: white;
+    border-radius: 10px;
+    
+}
+
+.containers .forms form button a{
+    text-decoration: none;
+    color: white;
+}
+
+.containers .forms form button a:hover{
+    color: white;
+}
+
+.containers .forms form button:hover{ /* Stylings Stylings*/
+    background-color: #7FB3D5;
+    color: white;
+    border-radius: 10px;
+}
+
+.containers .forms form a{
+    color:#039BE5;
+    font-size: 17px;
+}
+
+.containers .forms form a:hover{
+    color:#A569BD;
+}
+
+@keyframes ripple {
+    0% {
+      box-shadow: 0 0 0 0 rgba(142, 68, 173, 0.3),
+        0 0 0 1px rgba(142, 68, 173, 0.3),
+        0 0 0 3px rgba(142, 68, 173, 0.3),
+        0 0 0 5px rgba(142, 68, 173, 0.3);
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgba(142, 68, 173, 0.3),
+        0 0 0 4px rgba(142, 68, 173, 0.3),
+        0 0 0 20px rgba(165, 105, 189, 0),
+        0 0 0 30px rgba(165, 105, 189, 0);
+    }
+}
+
+.containers .forms form .sem{
+    display: flex;
+}
+.containers .forms form .sem label{
+    float: left;
+    width: 80%;
+    font-size: 20px;
+    margin-left: 100px;
+    margin-top: 5px;
+}
+
+.containers .forms form .sem input{
+    float:right;
+    width: 20%;
+    margin-right: 150px;
+}

@@ -1,0 +1,150 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-image: url('PSG1.png');
+    background-size: cover;
+}
+
+.container{ /* Background image */
+    margin-top: 150px;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding: 30px;
+    border-radius: 30px;
+    background-color: #ECF0F1;
+    box-shadow: 5px 10px 8px 5px #888888;
+    animation: ripple 1.5s linear infinite;
+    transition: all 0.7s ease;
+}
+
+.container h2{ /* Heading stylings */
+    color:#A569BD; 
+    font-family:'Times New Roman';
+    text-decoration-line: underline;
+    font-size: 35px;
+    text-align: center;
+}
+
+.container .forms{
+    text-align: center;
+}
+
+.container .forms form{ /* Feed back form Alignment */
+    padding: 10px;
+}
+
+.container .forms form input{ /* Input Stylings */
+    width: 80%;
+    margin: 10px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+}
+
+.container .forms form button{ /* Stylings Stylings*/
+    width: 84%;
+    margin: 10px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    background-color: #A569BD;
+    font-size: 20px;
+    color: white;
+    border-radius: 10px;
+    
+}
+
+.container .forms form button a{
+    text-decoration: none;
+    color: white;
+}
+
+.container .forms form button a:hover{
+    color: white;
+}
+
+.container .forms form button:hover{ /* Stylings Stylings*/
+    background-color: #7FB3D5;
+    color: white;
+    border-radius: 10px;
+}
+
+.container .forms form a{
+    color:#039BE5;
+    font-size: 17px;
+}
+
+.container .forms form a:hover{
+    color:#A569BD;
+}
+
+.box{
+    display: flex;
+}
+
+.box1{ /* Background image */
+    float: left;
+    width: 50%;
+    margin-left: 30%;
+    margin-right: 30px;
+    margin-top: 300px;
+    padding: 75px;
+    border-radius: 30px;
+    background-color: #ECF0F1;
+    box-shadow: 5px 10px 8px 5px #888888;
+    animation: ripple 1.5s linear infinite;
+    transition: all 0.7s ease;
+}
+
+.box1 a{
+    font-family: 'Lucida Sans';
+    font-size: 40px;
+    text-decoration: none;
+    color:#A569BD;
+}
+
+.box1 a:hover{
+    color:#039BE5;
+}
+
+.box2{ /* Background image */
+    float: right;
+    width: 50%;
+    margin-left: 30px;
+    margin-right: 30%;
+    margin-top: 300px;
+    padding: 75px;
+    border-radius: 30px;
+    background-color: #ECF0F1;
+    box-shadow: 5px 10px 8px 5px #888888;
+    animation: ripple 1.5s linear infinite;
+    transition: all 0.7s ease;
+}
+
+.box2 a{
+    font-family: 'Lucida Sans';
+    text-decoration: none;
+    font-size: 40px;
+    color:#A569BD;
+}
+
+.box2 a:hover{
+    color:#039BE5;
+}
+
+@keyframes ripple {
+    0% {
+      box-shadow: 0 0 0 0 rgba(142, 68, 173, 0.3),
+        0 0 0 1px rgba(142, 68, 173, 0.3),
+        0 0 0 3px rgba(142, 68, 173, 0.3),
+        0 0 0 5px rgba(142, 68, 173, 0.3);
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgba(142, 68, 173, 0.3),
+        0 0 0 4px rgba(142, 68, 173, 0.3),
+        0 0 0 20px rgba(165, 105, 189, 0),
+        0 0 0 30px rgba(165, 105, 189, 0);
+    }
+}
+

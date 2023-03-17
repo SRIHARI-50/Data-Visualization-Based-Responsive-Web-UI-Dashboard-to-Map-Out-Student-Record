@@ -1,0 +1,126 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-image: url('PSG1.png');
+    background-size: cover;
+}
+
+.container{ /* Background image */
+    margin-top: 50px;
+    margin-bottom: 100px;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding: 30px;
+    border-radius: 30px;
+    background-color: #ECF0F1;
+    box-shadow: 5px 10px 8px 5px #888888;
+    animation: ripple 1.5s linear infinite;
+    transition: all 0.7s ease;
+}
+
+.container h2{ /* Heading stylings */
+    color:#A569BD; 
+    font-family:'Times New Roman';
+    text-decoration-line: underline;
+    font-size: 35px;
+    text-align: center;
+}
+
+.container .forms{
+    text-align: center;
+}
+
+.container .forms form{ /* Feed back form Alignment */
+    padding: 10px;
+}
+
+.container .forms form input{ /* Input Stylings */
+    width: 80%;
+    margin: 10px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+}
+
+.container .forms form .block{
+    display: flex;
+}
+.container .forms form .block label{
+    font-size: 20px;
+    margin-top: 15px;
+    width: 60%;
+    float:left;
+}
+.container .forms form .block select{
+    width: 40%;
+    margin: 10px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    float:right;
+}
+.container .forms form label{
+    font-size: 20px;
+}
+.container .forms form select{
+    width: 80%;
+    margin: 10px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+}
+
+.container .forms form button{ /* Stylings Stylings*/
+    width: 84%;
+    margin: 10px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    background-color: #A569BD;
+    font-size: 20px;
+    color: white;
+    border-radius: 10px;
+    
+}
+
+.container .forms form button a{
+    text-decoration: none;
+    color: white;
+}
+
+.container .forms form button a:hover{
+    color: white;
+}
+
+.container .forms form button:hover{ /* Stylings Stylings*/
+    background-color: #7FB3D5;
+    color: white;
+    border-radius: 10px;
+}
+
+.container .forms form a{
+    color:#039BE5;
+    font-size: 17px;
+}
+
+.container .forms form a:hover{
+    color:#A569BD;
+}
+
+@keyframes ripple {
+    0% {
+      box-shadow: 0 0 0 0 rgba(142, 68, 173, 0.3),
+        0 0 0 1px rgba(142, 68, 173, 0.3),
+        0 0 0 3px rgba(142, 68, 173, 0.3),
+        0 0 0 5px rgba(142, 68, 173, 0.3);
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgba(142, 68, 173, 0.3),
+        0 0 0 4px rgba(142, 68, 173, 0.3),
+        0 0 0 20px rgba(165, 105, 189, 0),
+        0 0 0 30px rgba(165, 105, 189, 0);
+    }
+}

@@ -1,0 +1,169 @@
+
+/* The side navigation menu */
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color:white;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+
+  .sidebar img{
+      width: 200px;
+      height: auto;
+  }
+  
+  /* Sidebar links */
+  .sidebar p {
+    display: block;
+    font-style: italic;
+    color: #8CC0DE;
+    padding: 10px;
+  }
+  .sidebar p.active {
+    background-color: #FFD9C0;
+    color: white;
+  }
+  
+  /* Links on mouse-over */
+  .sidebar p:hover:not(.active) {
+    background-color: #FFD9C0;
+    color: white;
+  }
+  
+  /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+  div.contents {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+  }
+  
+  /* On screens that are less than 700px wide, make the sidebar into a topbar */
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar p {float: left;}
+    div.contents {margin-left: 0;}
+  }
+  
+  /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+  @media screen and (max-width: 400px) {
+    .sidebar p {
+      text-align: center;
+      float: none;
+    }
+  }
+
+  .contents .heading{
+      font-size: 30px;
+      padding: 20px;
+      font-family: 'Times New Roman', Times, serif;
+      font-weight: bold;
+      font-style: italic;
+      color:white;
+      background-color: #8CC0DE;
+  }
+  .contents .block{
+      display: flex;
+  } 
+
+  .contents .block .left_block{
+      float: left;
+      width: 50%;
+      margin-left: 100px;
+  }
+
+  .contents .block .right_block{
+    float: right;
+    width: 50%;
+    margin-right: 100px;
+}
+  .contents .block .left_block h1{
+    font-size: 30px;
+    padding: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-style: italic;
+  }
+  .contents .block .right_block h1{
+    font-size: 30px;
+    padding: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-style: italic;
+  }
+.contents .block .left_block .piechart {
+    margin-top: 30px;
+    display: block;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-image: conic-gradient(
+        pink 0 20deg, 
+        lightblue 0 40deg, 
+        orange 0 80deg,
+        #F4BFBF 0 100deg,#FFD9C0 0 160deg,#FAF0D7 0 170deg,#8CC0DE 0 250deg,#76D7C4 0 300deg);
+}
+.contents .block .left_block .piechart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.barcontainer {
+    position: relative;
+    border-radius: 5px 5px 0 0;
+    width: 100%;
+    min-height: 25vw;
+    max-height: 50vw;
+    min-width: 40%;
+    max-width: 60%;
+    padding: 10px;
+    z-index: 1;
+  }
+  
+  .bar {
+    position: absolute;
+    display: inline-block;
+    bottom: 0;
+    border-radius: 6px 6px 0 0;
+    background: #8CC0DE;
+    width: 30%;
+    text-align: center;
+    color: white;
+    box-shadow: 4px 0 8px #888;
+  }
+  
+  .barlabel {
+    position: absolute;
+    background: #F4BFBF;
+    bottom: 0;
+    width: 100%;
+    color: white;
+  }
+  
+  .bar:nth-child(1) {
+    left: 0px;
+  }
+  
+  .bar:nth-child(2) {
+    left: 80px;
+  }
+  
+  .bar:nth-child(3) {
+    left: 160px;
+  }
+  
+  .bar:nth-child(4) {
+    left: 240px;
+  }
+  
+  .bar:nth-child(5) {
+    left: 320px;
+  }
